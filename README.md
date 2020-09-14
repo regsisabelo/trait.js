@@ -1,6 +1,6 @@
 ![Trait.js](https://github.com/regs37/Trait.js/blob/master/src/img/trait.js-logo.png?raw=true)
 ### Installation
-There's been other libraries/repositories out there that is also respresents that javascript equivalent of **Php - Traits**.  Among them, this solution is a lightweight package and serves only one purpose, **allow any classes to inherit methods from a trait**.
+There's been other libraries/repositories out there that is also respresents the javascript equivalent of **Php - Traits**.  Among them, this solution is a lightweight package and serves only one purpose, **allow any classes to inherit methods from a trait**.
 
 ##### NPM
 ```
