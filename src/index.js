@@ -1,4 +1,12 @@
-import Trait from "./trait";
+"use strict";
+
+function Trait(methods) {
+  if (typeof methods !== "object") return this;
+
+  this.$traits = methods;
+}
+
+Trait.prototype.inheritTo = require("./methods/inherit_to");
 
 const trait = (methods) => new Trait(methods);
 
