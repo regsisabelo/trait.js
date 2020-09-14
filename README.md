@@ -11,7 +11,7 @@ npm install trait.js
 
 ### Sample Usage:
 
-Let's create a simple trait that displays user's fullname.
+Let's create a simple trait that displays the user's fullname.
 
 #### UserTrait.js 
 
