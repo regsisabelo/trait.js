@@ -1,16 +1,19 @@
 "use strict";
 
-const { Trait } = require("../dist");
+const trait = require("../dist");
 
-const TestTrait = new Trait({
+const TestTrait = trait({
   print() {
     console.log("Foo");
+    return "bar";
   },
 });
 
-class Model {}
+let Model = function () {};
 TestTrait.inheritTo(Model);
 
 let model = new Model();
 
-model.print();
+TestTrait.call("print").then((response) => {
+  console.log(response);
+});
