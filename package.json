@@ -1,8 +1,8 @@
 {
   "name": "trait.js",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Inherit methods from a trait instance to any model/class",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "webpack --mode production",
     "prepublish": "npm run build",
