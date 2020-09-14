@@ -3,7 +3,7 @@
 function Trait(methods) {
   if (typeof methods !== "object") return this;
 
-  this.$traits = methods;
+  this.$traits = [methods];
 }
 
 Trait.prototype.inheritTo = require("./methods/inherit_to");

@@ -1,6 +1,6 @@
 {
   "name": "trait.js",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Inherit methods from a trait instance to any model/class",
   "main": "dist/index.js",
   "scripts": {
