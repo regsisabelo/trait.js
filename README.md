@@ -1,5 +1,6 @@
 
 ![Trait.js](https://github.com/regs37/Trait.js/blob/master/src/img/trait.js-logo.png?raw=true)
+
 ![liscense](https://img.shields.io/npm/l/trait.js) ![enter image description here](https://img.shields.io/npm/dw/trait.js) ![enter image description here](https://img.shields.io/npm/v/trait.js)
 
 ### Installation
