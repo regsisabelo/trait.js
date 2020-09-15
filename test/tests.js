@@ -9,9 +9,7 @@ const TestTrait = trait({
   },
 });
 
-let Model = function () {};
+let Model = {};
 TestTrait.in(Model);
 
-let model = new Model();
-
-model.print();
+Model.print();

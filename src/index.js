@@ -7,7 +7,9 @@ function Trait(...methods) {
 
 Trait.prototype.inheritTo = require("./methods/inherit_to");
 Trait.prototype.call = require("./methods/call");
-Trait.prototype.in = Trait.prototype.inheritTo;
+Trait.prototype.each = require("./methods/each");
+Trait.prototype.methods = require("./methods/methods");
+Trait.prototype.in = Trait.prototype.inheritTo; // a shorthand for inhertTo
 
 const trait = (methods) => new Trait(methods);
 
