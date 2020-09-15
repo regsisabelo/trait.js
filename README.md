@@ -40,6 +40,8 @@ For example we have a user model here that wants to use the **UserTrait.js**
     }
 
     UserTrait.inheritTo(User);
+    // or
+    UserTrait.in(User); // a shorthand for inheritTo
 
 Let's try to use that method:
 
