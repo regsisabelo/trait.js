@@ -1,6 +1,6 @@
 {
   "name": "trait.js",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Inherit methods from a trait instance to any model/class",
   "main": "dist/index.js",
   "scripts": {
@@ -29,7 +29,11 @@
   "license": "ISC",
   "homepage": "https://regs37.github.io/Trait.js/",
   "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
-  }
+  },
+  "types": "dist/main.d.ts"
 }

@@ -1,14 +1,13 @@
 "use strict";
 
-function Trait(methods) {
-  if (typeof methods !== "object") return this;
-
+function Trait(...methods) {
   this.name = "Trait";
-  this.$traits = [methods];
+  this.$traits = methods;
 }
 
 Trait.prototype.inheritTo = require("./methods/inherit_to");
 Trait.prototype.call = require("./methods/call");
+Trait.prototype.in = Trait.prototype.inheritTo;
 
 const trait = (methods) => new Trait(methods);
 
