@@ -9,7 +9,7 @@ There's been other libraries/repositories out there that is also respresents the
 
 ##### NPM
 
-```
+```javascript
 npm install trait.js
 ```
 
@@ -20,7 +20,7 @@ npm install trait.js
 Let's create a simple trait that displays the user's fullname.
 
 #### UserTrait.js
-
+```javascript
     import trait from 'trait.js'
 
     export default trait({
@@ -28,11 +28,11 @@ Let's create a simple trait that displays the user's fullname.
     	    return `${this.first_name} ${this.last_name}`;
         }
     })
-
+```
 #### User.js
 
 For example we have a user model here that wants to use the **UserTrait.js**
-
+```javascript
     import UserTrait from './UserTrait.js';
 
     export default class User {
@@ -45,9 +45,9 @@ For example we have a user model here that wants to use the **UserTrait.js**
     UserTrait.inheritTo(User);
     // or
     UserTrait.in(User); // a shorthand for inheritTo
-
+```
 Let's try to use that method:
-
+```javascript
     import User from './User.js';
 
     let user = new User({
@@ -57,7 +57,7 @@ Let's try to use that method:
 
     // We can now use the trait method getFullname()
     console.log(user.getFullname()); // Foo Bar
-
+```
 ### Why use Trait?
 
 In Php, [Traits](https://www.php.net/manual/en/language.oop5.traits.php) are a mechanism for code reuse in single inheritance languages such as PHP. A Trait is intended to reduce some limitations of single inheritance by enabling a developer to reuse sets of methods freely in several independent classes living in different class hierarchies. The semantics of the combination of Traits and classes is defined in a way which reduces complexity, and avoids the typical problems associated with multiple inheritance and Mixins.
