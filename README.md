@@ -62,3 +62,6 @@ In Php, [Traits](https://www.php.net/manual/en/language.oop5.traits.php) are a m
 A Trait is similar to a class, but only intended to group functionality in a fine-grained and consistent way. It is not possible to instantiate a Trait on its own. It is an addition to traditional inheritance and enables horizontal composition of behavior; that is, the application of class members without requiring inheritance.
 
 > https://www.php.net/manual/en/language.oop5.traits.php
+
+###License
+GNU General Public License © Regs Isabelo
