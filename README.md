@@ -1,5 +1,5 @@
 <p align="center"><img src="https://github.com/regs37/Trait.js/blob/master/src/img/trait.js-logo.png?raw=true" alt="k6" /></p>
-<h3 align="center">Reuse methods anywhere</h3>
+<h3 align="center">Inherit methods from multiple trait to any class</h3>
 <p align="center">
   <a href="https://github.com/regs37/trait.js/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/trait.js" alt="License"></a>
   <a href="https://www.npmjs.com/package/trait.js"><img src="https://img.shields.io/npm/dw/trait.js" alt="NPM downloads"></a>
