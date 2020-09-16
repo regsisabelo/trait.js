@@ -1,4 +1,5 @@
 
+
 ![Trait.js](https://github.com/regs37/Trait.js/blob/master/src/img/trait.js-logo.png?raw=true)
 
 ![liscense](https://img.shields.io/npm/l/trait.js) ![downloads](https://img.shields.io/npm/dw/trait.js) ![version](https://img.shields.io/npm/v/trait.js) ![build](https://img.shields.io/github/workflow/status/regs37/trait.js/Node.js%20CI)
@@ -11,7 +12,8 @@
 ```bash
 npm install trait.js --save
 ```
-
+#### CDN
+[https://unpkg.com/trait.js@1.2.12/build/trait.min.js](https://unpkg.com/trait.js@1.2.12/build/trait.min.js)
 
 ### Sample Usage:
 
