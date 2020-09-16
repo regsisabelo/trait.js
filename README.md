@@ -1,7 +1,7 @@
 
 ![Trait.js](https://github.com/regs37/Trait.js/blob/master/src/img/trait.js-logo.png?raw=true)
 
-![liscense](https://img.shields.io/npm/l/trait.js) ![enter image description here](https://img.shields.io/npm/dw/trait.js) ![enter image description here](https://img.shields.io/npm/v/trait.js)
+![liscense](https://img.shields.io/npm/l/trait.js) ![downloads](https://img.shields.io/npm/dw/trait.js) ![version](https://img.shields.io/npm/v/trait.js) ![build](https://img.shields.io/github/workflow/status/regs37/trait.js/Node.js%20CI)
 
 **Trait.js** is a helper which allows javascript to have the same behavior with the Php Trait feature. Allows you to inherit or reuse methods to any classes or objects. There's been other libraries/repositories out there that is also respresents the javascript equivalent of **Php - Traits**. Among them, this solution is a lightweight package and serves only one purpose, **allow any classes to inherit methods from a trait**.
 
