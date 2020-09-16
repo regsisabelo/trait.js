@@ -67,4 +67,4 @@ A Trait is similar to a class, but only intended to group functionality in a fin
 > https://www.php.net/manual/en/language.oop5.traits.php
 
 ### License
-GNU General Public License © 2020 Regs Isabelo
+GNU General Public License v3.0 © 2020 Regs Isabelo
