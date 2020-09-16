@@ -8,8 +8,8 @@
 ### Installation
 ##### NPM
 
-```javascript
-npm install trait.js
+```bash
+npm install trait.js --save
 ```
 
 
@@ -19,42 +19,42 @@ Let's create a simple trait that displays the user's fullname.
 
 #### UserTrait.js
 ```javascript
-    import trait from 'trait.js'
+import trait from 'trait.js';
 
-    export default trait({
-        getFullname: function(){
-    	    return `${this.first_name} ${this.last_name}`;
-        }
-    })
+export default trait({
+  getFullname() {
+    return `${this.firstName} ${this.lastName}`;
+  },
+});
 ```
 #### User.js
 
 For example we have a user model here that wants to use the **UserTrait.js**
 ```javascript
-    import UserTrait from './UserTrait.js';
+import UserTrait from './UserTrait.js';
 
-    export default class User {
-        constructor({first_name, last_name}){
-    	    this.first_name = first_name;
-    	    this.last_name = last_name;
-        }
-    }
+export default class User {
+  constructor({ firstName, lastName }) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+}
 
-    UserTrait.inheritTo(User);
-    // or
-    UserTrait.in(User); // a shorthand for inheritTo
+UserTrait.inheritTo(User);
+// or
+UserTrait.in(User); // a shorthand for inheritTo
 ```
 Let's try to use that method:
 ```javascript
-    import User from './User.js';
+import User from './User.js';
 
-    let user = new User({
-        first_name: "Foo",
-        last_name: "Bar",
-    });
+const user = new User({
+  first_name: 'Foo',
+  last_name: 'Bar',
+});
 
-    // We can now use the trait method getFullname()
-    console.log(user.getFullname()); // Foo Bar
+// We can now use the trait method getFullname()
+console.log(user.getFullname()); // Foo Bar
 ```
 ### Why use Trait?
 
