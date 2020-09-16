@@ -4,7 +4,7 @@
  * Call a method from a trait using the method name
  * @param {string} method_name
  */
-module.exports = async function call(method_name) {
+module.exports = function call(method_name) {
   let METHOD = null;
 
   this.$traits.forEach((trait) => {
