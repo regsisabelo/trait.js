@@ -1,3 +1,6 @@
 src
 webpack.config.js
 .babelrc
+.nyc_output
+npm-debug.log
+test

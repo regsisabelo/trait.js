@@ -4,13 +4,22 @@
   "description": "Inherit methods from a trait instance to any model/class",
   "main": "dist/index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "prepublish": "npm run build",
+    "all": "npm run build && npm test && npm run eslint",
+    "transpile": "babel src --quiet --out-dir dist",
+    "prepublishOnly": "npm run all",
     "eslint": "npm run eslint:js && npm run eslint:md",
+    "bundle.development": "webpack-cli dist/index.js --output build/trait.js --mode development --output-library trait",
+    "bundle.production": "webpack-cli dist/index.js --output build/trait.min.js --mode production --output-library trait",
+    "build": "npm run transpile && npm run bundle.development && npm run bundle.production",
     "eslint:js": "eslint src/ test/ --fix",
     "eslint:md": "eslint --fix --ext md README.md docs/ --rule strict:off --rule no-undef:off --rule no-unused-vars:off --rule func-names:off --rule no-console:off --rule consistent-return:off --rule import/no-unresolved:off --rule import/extensions:off --parser-options sourceType:module",
-    "coverage": "npm run build && mocha test/tests.js",
+    "coverage": "npm run transpile && nyc mocha test/tests.js",
     "test": "mocha"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
   },
   "repository": {
     "type": "git",
@@ -30,19 +39,26 @@
     "name": "Regs Isabelo",
     "email": "isabelorodrigo2@gmail.com"
   },
-  "license": "GNU GPL v3",
+  "license": "GPL-3.0-only",
   "homepage": "https://regs37.github.io/Trait.js/",
   "devDependencies": {
     "@babel/core": "^7.11.6",
+    "@babel/polyfill": "^7.11.5",
     "@babel/preset-env": "^7.11.5",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
     "chai": "^4.2.0",
     "eslint": "^7.9.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-markdown": "^1.0.2",
+    "html-webpack-plugin": "^4.4.1",
     "mocha": "^8.1.3",
+    "nyc": "^15.1.0",
     "webpack": "^4.44.1",
+    "webpack-cdn-plugin": "^3.3.1",
     "webpack-cli": "^3.3.12"
   },
   "types": "dist/main.d.ts",

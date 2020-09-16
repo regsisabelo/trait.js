@@ -1,1 +1,27 @@
-module.exports=function(t){var e={};function r(o){if(e[o])return e[o].exports;var n=e[o]={i:o,l:!1,exports:{}};return t[o].call(n.exports,n,n.exports,r),n.l=!0,n.exports}return r.m=t,r.c=e,r.d=function(t,e,o){r.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:o})},r.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},r.t=function(t,e){if(1&e&&(t=r(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var o=Object.create(null);if(r.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var n in t)r.d(o,n,function(e){return t[e]}.bind(null,n));return o},r.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return r.d(e,"a",e),e},r.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},r.p="",r(r.s=0)}([function(t,e,r){function o(...t){this.name="Trait",this.$traits=t}o.prototype.inheritTo=r(1),o.prototype.call=r(2),o.prototype.each=r(3),o.prototype.methods=r(4),o.prototype.in=o.prototype.inheritTo;const n=t=>new o(t);t.exports=n,t.exports.trait=n,t.exports.default=n,t.exports.Trait=o},function(t,e){t.exports=function(t){const e=t.prototype||t;return this.each((t,r)=>{e[t]||(e[t]=r)})}},function(t,e){t.exports=function(t){let e=null;if(this.$traits.forEach(r=>{r[t]&&(e=r[t])}),!e)throw new Error(`${t} does not exist on ${this.name}`);return e.apply(this)}},function(t,e){t.exports=function(t){if("function"!=typeof t)throw new Error("Each method parameter must be a callback function");return this.$traits.forEach(e=>{Object.keys(e).forEach(r=>{if(Object.prototype.hasOwnProperty.call(e,r)){const o=e[r],n=r;t.apply(this,[n,o])}})}),this}},function(t,e){t.exports=function t(){return this.each((e,r)=>{t[e]=r}),{}}}]);
+'use strict';
+
+function Trait() {
+  this.name = 'Trait';
+
+  for (var _len = arguments.length, methods = Array(_len), _key = 0; _key < _len; _key++) {
+    methods[_key] = arguments[_key];
+  }
+
+  this.$traits = methods;
+}
+
+Trait.prototype.inheritTo = require('./methods/inherit_to');
+Trait.prototype.call = require('./methods/call');
+Trait.prototype.each = require('./methods/each');
+Trait.prototype.methods = require('./methods/methods');
+
+Trait.prototype.in = Trait.prototype.inheritTo; // a shorthand for inhertTo
+
+var trait = function trait(methods) {
+  return new Trait(methods);
+};
+
+module.exports = trait;
+module.exports.trait = trait;
+module.exports.default = trait;
+module.exports.Trait = Trait;
