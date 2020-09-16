@@ -70,4 +70,4 @@ So, what if a class needs to inherit multiple behaviors? OOP traits solve this p
 Traits are used to declare methods that can be used in multiple classes. Traits can have methods and abstract methods that can be used in multiple classes, and the methods can have any access modifier (public, private, or protected).
 
 ### License
-GNU General Public License v3.0 © 2020 Regs Isabelo
+MIT © 2020 Regs Isabelo
