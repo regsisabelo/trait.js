@@ -5,3 +5,4 @@ package-lock.json
 coverage
 .npm-debug.log
 npm-debug.log
+.npmrc
