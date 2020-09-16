@@ -1,6 +1,6 @@
 {
   "name": "trait.js",
-  "version": "1.2.13",
+  "version": "1.2.15",
   "description": "Inherit methods from a trait instance to any model/class",
   "main": "dist/index.js",
   "scripts": {
@@ -39,7 +39,7 @@
     "name": "Regs Isabelo",
     "email": "isabelorodrigo2@gmail.com"
   },
-  "license": "GPL-3.0-only",
+  "license": "MIT",
   "homepage": "https://regs37.github.io/trait.js/",
   "devDependencies": {
     "@babel/core": "^7.11.6",
