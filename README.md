@@ -4,7 +4,7 @@
 
 ![liscense](https://img.shields.io/npm/l/trait.js) ![downloads](https://img.shields.io/npm/dw/trait.js) ![version](https://img.shields.io/npm/v/trait.js) ![build](https://img.shields.io/github/workflow/status/regs37/trait.js/Node.js%20CI)
 
-**Trait.js** is a helper which allows javascript to have the same behavior with the Php Trait feature. Allows you to inherit or reuse methods to any classes or objects. There's been other libraries/repositories out there that is also respresents the javascript equivalent of **Php - Traits**. Among them, this solution is a lightweight package and serves only one purpose, **allow any classes to inherit methods from a trait**.
+**Trait.js** is a helper which allows javascript to have the same behavior with the Php Trait feature. Allows you to inherit or reuse methods to any classes or objects. There's been other libraries/repositories out there that is also respresents the javascript equivalent of **Php - Traits**. Among them, this solution is a simple and lightweight package and serves only one purpose, **allow any classes to inherit methods from multiple traits**.
 
 ### Installation
 ##### NPM
@@ -31,7 +31,7 @@ export default trait({
 ```
 #### User.js
 
-For example we have a user model here that wants to use the **UserTrait.js**
+For example we have a user model that wants to use the **UserTrait.js**
 ```javascript
 import UserTrait from './UserTrait.js';
 
@@ -60,11 +60,11 @@ console.log(user.getFullname()); // Foo Bar
 ```
 ### Why use Trait?
 
-In Php, [Traits](https://www.php.net/manual/en/language.oop5.traits.php) are a mechanism for code reuse in single inheritance languages such as PHP. A Trait is intended to reduce some limitations of single inheritance by enabling a developer to reuse sets of methods freely in several independent classes living in different class hierarchies. The semantics of the combination of Traits and classes is defined in a way which reduces complexity, and avoids the typical problems associated with multiple inheritance and Mixins.
+Javascript only supports single inheritance: a child class can inherit only from one single parent.
 
-A Trait is similar to a class, but only intended to group functionality in a fine-grained and consistent way. It is not possible to instantiate a Trait on its own. It is an addition to traditional inheritance and enables horizontal composition of behavior; that is, the application of class members without requiring inheritance.
+So, what if a class needs to inherit multiple behaviors? OOP traits solve this problem.
 
-> https://www.php.net/manual/en/language.oop5.traits.php
+Traits are used to declare methods that can be used in multiple classes. Traits can have methods and abstract methods that can be used in multiple classes, and the methods can have any access modifier (public, private, or protected).
 
 ### License
 GNU General Public License v3.0 © 2020 Regs Isabelo
