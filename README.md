@@ -2,11 +2,13 @@
 <h3 align="center">Inherit methods from multiple trait to any class</h3>
 <p align="center">
   <a href="https://github.com/regs37/trait.js/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/trait.js" alt="License"></a>
+  <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fregs37%2Ftrait.js?ref=badge_shield"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fregs37%2Ftrait.js.svg?type=shield" alt="License"></a>
   <a href="https://www.npmjs.com/package/trait.js"><img src="https://img.shields.io/npm/dw/trait.js" alt="NPM downloads"></a>
 <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fregs37%2Ftrait.js?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fregs37%2Ftrait.js.svg?type=shield"/></a>
   <a href="https://www.npmjs.com/package/trait.js"><img src="https://img.shields.io/npm/v/trait.js" alt="Version"></a>
   <a href="https://travis-ci.org/github/regs37/trait.js"><img src="https://img.shields.io/github/workflow/status/regs37/trait.js/Node.js%20CI" alt="Build"></a>
 </p>
+
 
 **Trait.js** is a helper which allows javascript to have the same behavior with the Php Trait feature. Allows you to inherit or reuse methods to any classes or objects. There's been other libraries/repositories out there that is also respresents the javascript equivalent of **Php - Traits**. Among them, this solution is a simple and lightweight package and serves only one purpose, **allow any classes to inherit methods from multiple traits**.
 
@@ -74,4 +76,7 @@ So, what if a class needs to inherit multiple behaviors? OOP traits solve this p
 Traits are used to declare methods that can be used in multiple classes. Traits can have methods and abstract methods that can be used in multiple classes, and the methods can have any access modifier (public, private, or protected).
 
 ### License
-GNU General Public License v3.0 © 2020 Regs Isabelo
+MIT © 2020 Regs Isabelo
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fregs37%2Ftrait.js.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fregs37%2Ftrait.js?ref=badge_large)
+
