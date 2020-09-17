@@ -12,9 +12,6 @@
 
 **Trait.js** is a helper which allows javascript to have the same behavior with the Php Trait feature. Allows you to inherit or reuse methods to any classes or objects. There's been other libraries/repositories out there that is also respresents the javascript equivalent of **Php - Traits**. Among them, this solution is a simple and lightweight package and serves only one purpose, **allow any classes to inherit methods from multiple traits**.
 
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fregs37%2Ftrait.js.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fregs37%2Ftrait.js?ref=badge_large)
-
 ### Installation
 ##### NPM
 
